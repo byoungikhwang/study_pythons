@@ -10,9 +10,6 @@ is_included = "Python" in second
 combined_string = f"Welcome! {second}"
 print(combined_string)
 
-# 보너스: 포함 여부도 출력하고 싶다면:
-# print(f"Includes 'Python': {is_included}")
-
 
 # 문제 2
 first = 5
