@@ -24,19 +24,35 @@ while first >= 1:
     # 변수 값을 감소시키는 것이 중요
     first -= 1
 
-    # 문제 3
-    kor = [70, 80, 90, 40, 50]
+# 문제 3-1 리스트 사용
+kor = [70, 80, 90, 40, 50]
 eng = [90, 80, 70, 70, 60]
 
-total_scores = []
-avg_scores = []
+# 1. total_scores 변수 생성 및 할당 (리스트 컴프리헨션)
+# zip으로 묶인 각 과목 점수의 합계를 계산하여 리스트에 담습니다.
+total_scores = [k + e for k, e in zip(kor, eng)]
+
+# 2. avg_scores 변수 생성 및 할당 (리스트 컴프리헨션)
+# zip으로 묶인 각 과목 점수의 평균((k + e) / 2)을 계산하여 리스트에 담습니다.
+avg_scores = [(k + e) / 2 for k, e in zip(kor, eng)]
+
+print(f"total_scores = {total_scores}")
+print(f"avg_scores = {avg_scores}")
+
+
+# 문제 3-2 append 사용
+    kor = [70, 80, 90, 40, 50]
+    eng = [90, 80, 70, 70, 60]
+
+    total_scores = []
+    avg_scores = []
 
 # zip()을 사용하여 kor와 eng의 요소를 쌍으로 묶어 순회
 for k, e in zip(kor, eng):
     total = k + e
     average = total / 2  # 두 과목이므로 2로 나눔
     
-    # 총점과 평균을 각 리스트에 추가
+    # 총점과 평균을 각 리스트에 추가 
     total_scores.append(total)
     # 평균은 실수형(float)으로 저장 (문제 출력이 80.0, 55.0이므로)
     avg_scores.append(average) 
