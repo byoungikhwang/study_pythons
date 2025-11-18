@@ -1,13 +1,13 @@
 # 문제 1
 
-second = "Python is fun"
+second = "파일선 재미 있다."
 
 # "Python"이 second 문자열에 포함되어 있는지 확인
-is_included = "Python" in second
+is_included = "파일선" in second
 
 # 결과 출력 (포함 여부와 합쳐진 문자열)
 # 문제의 요구사항은 합쳐서 출력하는 것이므로, 포함 여부 확인 후 f-string 사용
-combined_string = f"Welcome! {second}"
+combined_string = f"환영해! {second}"
 print(combined_string)
 
 
