@@ -41,11 +41,11 @@ print(f"avg_scores = {avg_scores}")
 
 
 # 문제 3-2 append 사용
-    kor = [70, 80, 90, 40, 50]
-    eng = [90, 80, 70, 70, 60]
+kor = [70, 80, 90, 40, 50]
+eng = [90, 80, 70, 70, 60]
 
-    total_scores = []
-    avg_scores = []
+total_scores = []
+avg_scores = []
 
 # zip()을 사용하여 kor와 eng의 요소를 쌍으로 묶어 순회
 for k, e in zip(kor, eng):
