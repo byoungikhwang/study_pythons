@@ -1,6 +1,5 @@
 # 문제 6
 def to_celsius(temp):
-
     celsius = (temp - 32) * 5 / 9     # celsius로 오류
     return celsius
 
