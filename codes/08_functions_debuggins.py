@@ -46,8 +46,7 @@ print(results)      # 3. 루프 종료 결과 값 출력
 def to_celsius(temp):
     return (temp - 32) * 5 / 9 
 
-def convert_temps(temps_list):
-    """주어진 온도 리스트의 모든 값을 섭씨로 변환하여 리스트로 반환합니다."""
+def convert_temps(temps_list):      # 온도 리스트의 값들을 섭씨로 변환.
     results = []
     for t in temps_list:
         results.append(to_celsius(t))
