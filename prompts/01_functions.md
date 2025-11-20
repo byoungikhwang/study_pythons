@@ -11,8 +11,10 @@
 5.  **출력:** 주어진 테스트 리스트를 사용하여 10개의 테스트 결과를 모두 출력해야 합니다.
 
 #### 📄 문제 코드 골격 (수정하여 완성)
+```
 
-```python
+```
+python
 # 문제 코드 골격
 
 def calculate_all(num1, num2):
@@ -35,24 +37,20 @@ for i in range(10):
 ```
 
 ```
----
-
 ## 📋 3. 최종 결과 정리 Markdown 파일 (output_summary.md)
 
 Gemini가 응답한 내용을 정리하고 설명하기 위한 Markdown 파일입니다.
 
-```markdown
+markdown
 # 🌟 Python 함수 구현 결과 요약 및 설명
 
 요청하신 **사칙연산 수행 함수** 구현 결과를 정리합니다. 모든 조건(함수명 `sjh_*`, 변수명 `sj_*`, 0 나눗셈 예외 처리)을 만족하도록 작성되었습니다.
-
----
 
 ## 1. 완성된 Python 코드
 
 함수 `sjh_calculate_all` 내에서 사칙연산을 수행하며, 나눗셈의 경우 **ZeroDivisionError** 상황을 `division_error` 문자열로 처리하도록 구현했습니다.
 
-```python
+python
 def sjh_calculate_all(sj_num1, sj_num2):
     """
     두 숫자에 대한 덧셈, 뺄셈, 곱셈, 나눗셈 결과를 튜플로 반환합니다.
