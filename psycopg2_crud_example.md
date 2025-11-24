@@ -1,3 +1,4 @@
+```python
 import psycopg2 
 from psycopg2 import sql
 import os
@@ -232,7 +233,7 @@ def delete_book_by_title(title):
 def main():
     """메인 실행 함수"""
     print("==================================================")
-    print("      PostgreSQL CRUD 미션 실행 시작 (psycopg2)     ")
+    print("           PostgreSQL CRUD 미션 실행 시작 (psycopg2)      ")
     print("==================================================")
     
     # 1. 테이블 생성
@@ -275,8 +276,9 @@ def main():
     pprint(all_books_after_delete)
 
     print("\n==================================================")
-    print("          PostgreSQL CRUD 미션 실행 완료            ")
+    print("                 PostgreSQL CRUD 미션 실행 완료            ")
     print("==================================================")
 
 if __name__ == '__main__':
     main()
+```
